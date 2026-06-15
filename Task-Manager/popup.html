@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Productivity Reminder</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="brand">
+        <div class="logo">P</div>
+        <div>
+          <h1>Productivity</h1>
+          <p>Focus & reminders</p>
+        </div>
+      </div>
+
+      <div class="streak" id="streak">🔥 0</div>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <!-- ADD TASK CARD -->
+    <section class="add-task">
+
+      <input id="taskTitle" type="text" placeholder="What do you need to do?" />
+
+      <div class="time-row">
+        <input id="taskDate" type="date" />
+        <input id="taskTime" type="time" />
+
+        <button id="addBtn">Add</button>
+        <button id="openFrequency">Freq</button>
+      </div>
+
+      <!-- FREQUENCY PANEL -->
+      <div id="frequencyPanel" class="panel hidden">
+        <h4>Reminder frequency</h4>
+
+        <label><input type="radio" name="freq" value="once" checked> One-time</label><br>
+        <label><input type="radio" name="freq" value="daily"> Daily</label><br>
+        <label><input type="radio" name="freq" value="weekly"> Weekly</label><br>
+        <label><input type="radio" name="freq" value="monthly"> Monthly</label><br>
+
+        <label>
+          <input type="radio" name="freq" value="custom">
+          Every
+          <input id="customDays" type="number" min="2" value="3" style="width:50px;">
+          days
+        </label>
+      </div>
+
+    </section>
+
+    <!-- TASK LIST -->
+    <section id="taskList" class="task-list"></section>
+
+    <p id="empty" class="empty">No tasks yet</p>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
