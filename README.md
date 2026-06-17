@@ -1,17 +1,5 @@
 # Productivity Reminder — Chrome extension (Manifest V3)
 
-*COMPANY*: CODTECH IT SOLUTIONS
-
-*NAME*: OM PATEL
-
-*INTERN ID*: CTIS8942
-
-*DOMAIN*: MERN STACK WEB DEVELOPMENT
-
-*DURATION*: 8 WEEKS
-
-*MENTOR*: NEELA SANTOSH
-
 A small productivity reminder extension — add tasks, get notifications and inline reminders, track streaks.
 
 ## Features
